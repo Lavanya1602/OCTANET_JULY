@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+
+<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<link rel="stylesheet" type="text/css" href="Style1.css">
+<script src="/js/animal.js"></script>
+<body> 
+    
+<ul id="myMenu">
+  <h2> Recent</h2>
+  <li><a href="#">vijay</a></li>
+  <li><a href="#">Ias World</a></li>
+  <li><a href="#">Photos</a></li>
+  <li><a href="#">Prarthana</a></li>
+  <li><a href="#">Tube India</a></li>
+  <li><a href="#">Cool duse</a></li>
+  <li><a href="#">Varun</a></li>
+  <li><a href="#">code EAter</a></li>
+  
+  
+</ul> 
+</head>
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+</script>
+</body>
+</html>
+
+
+    
+</body>
+</html>

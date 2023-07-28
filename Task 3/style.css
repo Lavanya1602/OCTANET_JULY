@@ -1,0 +1,30 @@
+# /* Style the search box */
+
+#mySearch {
+  width: 150%;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: lavender;
+}
+
+/* Style the navigation menu */
+#myMenu { background: lavender;
+  list-style-type: none;
+  padding: 200;
+  margin: 387;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  background: lavender;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background: lavender;
+  background-color: #eee;
+} 
